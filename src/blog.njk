@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+title: Blog
+---
+
+<section class="grid grid-cols-1 sm:grid-cols-2 gap-10 my-10">
+    {% for blog in collections.blog | reverse %}
+        <a href="{{blog.page.url}}">
+            <div>
+                <img class="w-full rounded object-cover" src="{{blog.data.hero}}" alt="{{blog.data.title}}">
+                <h2 class="font-sans font-medium text-xl text-center pt-6">{{blog.data.title}}</h2>
+            </div>
+            <p class="font-sans pb-0 pt-2 text-sm text-center">
+                By {{blog.data.author}} on {% dateparse blog.page.date %}
+            </p>
+        </a>    
+    {% endfor %}
+</section>

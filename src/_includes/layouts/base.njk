@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>{{ title }}</title>
+        <link rel="stylesheet" href="/output.css"/>
+        <link rel="stylesheet" href="/prism.css">
+        <meta name="generator" content="{{ eleventy.generator }}">
+        <script>
+            if (localStorage.getItem("theme") === null) {
+                document.documentElement.setAttribute("data-theme", "retro");
+            } else
+                document.documentElement.setAttribute(
+                "data-theme",
+                localStorage.getItem("theme")
+            );
+        </script>
+    </head>
+    <body class="max-w-screen-lg sm:mx-auto">
+        <header>
+            {% include "partials/header.html" %}
+        </header>
+        <main>
+            {{ content|safe }}
+        </main>
+        <footer>
+            {% include "partials/footer.html" %}
+        </footer>
+    </body>
+</html>

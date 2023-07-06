@@ -1,0 +1,31 @@
+---
+layout: "layouts/base.njk"
+---
+<div class="flex relative">
+    <article class="prose prose-slate sm:prose-lg font-sans prose-h1:text-4xl my-10 prose-code:font-mono">
+        <h1>
+            {{title}}
+        </h1>
+        <p>{% dateparse date %}</p>
+        <img src="{{hero}}" alt="{{title}}">
+        {{content | safe}}
+
+        <section>
+            <h3>Additional resources for you</h3>
+            <ul>
+                {% for blog in related %}
+                    <li>
+                        <a href="/blog/{{blog | slugify}}">{{blog}}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
+    </article>
+    <aside class="prose prose-slate sm:prose-lg hidden sm:block h-auto mt-48">
+        <div class="sticky top-20 prose-li:list-none">
+            {{content | toc | safe}}
+        </div>   
+    </aside>
+
+</div>
+
