@@ -24,7 +24,7 @@ In this tutorial, we are discussing how to self-host Google Fonts on your websit
 
 Adding Google fonts to a website using Google font CDN is the easiest task for web developers. Just go to [Google fonts website](https://fonts.google.com/) and select any font you want. You can also select multiple fonts with different font weights. Now copy the link tags of Google fonts CDN and paste them into the head section of your webpage. To apply the font style, just specify the font family in your CSS file.
 
-![Google font CDN code copy](/incontent-images/selfhost-google-font-cdn.webp)
+![Google font CDN code copy](/src/assets/inline-images/selfhost-google-font-cdn.webp)
 
 ## Problems associated with Google font
 
@@ -60,11 +60,11 @@ On the other hand, if you are making a serious website, a startup, or a business
 
 In this tutorial, we are using [Google webfonts helper tool](https://google-webfonts-helper.herokuapp.com/fonts) to download and configure Google font on our website. Visit the Google webfonts helper tool and search for the fonts you want to include in your website. In this tutorial, I am using Inter font as an example.
 
-![Using Google webfont helper](/incontent-images/selfhost-google-font-local-webfont-helper.webp)
+![Using Google webfont helper](/inline-images/selfhost-google-font-local-webfont-helper.webp)
 
 Select the character set of the font. If you primarily use English, you should choose Latin. Then select font weights. I am selecting regular, 500, and 700 font weights. Now, customize the font folder prefix to locate your font from your code.
 
-![Character set selection in Google webfont helper](/incontent-images/selfhost-google-font-local-webfont-helper-2.webp)
+![Character set selection in Google webfont helper](/inline-images/selfhost-google-font-local-webfont-helper-2.webp)
 
 The different framework has different prefixes and directory structure. In this tutorial, I am listing out some very popular frameworks and how to add self-hosted local fonts to them.
 

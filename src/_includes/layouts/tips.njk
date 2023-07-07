@@ -7,15 +7,14 @@ layout: "layouts/base.njk"
             {{title}}
         </h1>
         <p>{% dateparse date %}</p>
-        <img src="{{hero}}" alt="{{title}}">
         {{content | safe}}
 
         <section>
             <h3>Additional resources for you</h3>
             <ul>
-                {% for blog in related %}
+                {% for tip in related %}
                     <li>
-                        <a href="/blog/{{blog | slugify}}">{{blog}}</a>
+                        <a href="/tips/{{tip | slugify}}">{{tip}}</a>
                     </li>
                 {% endfor %}
             </ul>

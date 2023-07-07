@@ -8,6 +8,9 @@
 - [x] RSS feed
 - [ ] responsive design
 - [ ] google site varification tag
+- [x] Setting up tips section
+- [x] 404 page
+- [ ] front page
 
 ## Saved ! maybe need in the future
 

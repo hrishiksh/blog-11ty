@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+title: Daily tips for developers
+description: Daily web dev tips. Keep updated with the latest development in tech and programming.
+date: 2023-07-01
+---
+
+<section class="flex flex-col gap-10 my-20">
+    {% for tip in collections.tips | reverse %}
+        <div class="flex items-baseline gap-4">
+            <h2 class="font-sans font-normal text-lg">
+                <a href="{{tip.page.url}}" class="underline">{{tip.data.title}}</a>
+             </h2>
+            <p class="font-sans text-sm">
+                {% dateparse tip.page.date %}
+            </p>  
+        </div>
+             
+    {% endfor %}
+</section>
