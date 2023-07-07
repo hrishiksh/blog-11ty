@@ -34,7 +34,8 @@ To make an endpoint, create a file called `greet.js` (or `greet.ts` if you are u
 
 Now export a `get` function from that file. Please don't make it a default export.
 
-```js
+```js:greet.js
+
 export async function get({ params, request }) {
   return {
     body: JSON.stringify({
@@ -49,7 +50,8 @@ Now start your astro server by using the `npm run dev` command. Run `pnpm dev` i
 
 If you visit `localhost:3000/greet` then you will get the JSON string as a response.
 
-```json
+```json:json
+
 // Response in your browser
 { "name": "Hrishikesh", "url": "https://hrishikeshpathak.com" }
 ```

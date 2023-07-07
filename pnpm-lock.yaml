@@ -1,9 +1,16 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 devDependencies:
   '@11ty/eleventy':
     specifier: ^2.0.1
     version: 2.0.1
+  '@11ty/eleventy-plugin-rss':
+    specifier: ^1.2.0
+    version: 1.2.0
   '@11ty/eleventy-plugin-syntaxhighlight':
     specifier: ^5.0.0
     version: 5.0.0
@@ -22,6 +29,9 @@ devDependencies:
   markdown-it-anchor:
     specifier: ^8.6.7
     version: 8.6.7(@types/markdown-it@12.2.3)(markdown-it@13.0.1)
+  markdown-it-named-code-blocks:
+    specifier: ^0.2.0
+    version: 0.2.0
   tailwindcss:
     specifier: ^3.3.2
     version: 3.3.2
@@ -52,6 +62,16 @@ packages:
       - bufferutil
       - supports-color
       - utf-8-validate
+    dev: true
+
+  /@11ty/eleventy-plugin-rss@1.2.0:
+    resolution: {integrity: sha512-YzFnSH/5pObcFnqZ2sAQ782WmpOZHj1+xB9ydY/0j7BZ2jUNahn53VmwCB/sBRwXA/Fbwwj90q1MLo01Ru0UaQ==}
+    dependencies:
+      debug: 4.3.4
+      posthtml: 0.16.6
+      posthtml-urls: 1.0.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /@11ty/eleventy-plugin-syntaxhighlight@5.0.0:
@@ -909,6 +929,11 @@ packages:
       function-bind: 1.1.1
     dev: true
 
+  /he@1.2.0:
+    resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
+    hasBin: true
+    dev: true
+
   /htmlparser2@7.2.0:
     resolution: {integrity: sha512-H7MImA4MS6cw7nbyURtLPO1Tms7C5H602LRETv95z1MxO/7CP7rDVROehUYeYBUYEON94NXXDEPmZuq+hX4sog==}
     dependencies:
@@ -1140,6 +1165,12 @@ packages:
       markdown-it: 13.0.1
     dev: true
 
+  /markdown-it-named-code-blocks@0.2.0:
+    resolution: {integrity: sha512-NvZJU3zREjIggiUq1Uq8dh/tTS9drmSMgkDbP2KmEhPdUaNqqgw3IxkRnd83ai4dt485/4Y/08NpcWrruYQ/6Q==}
+    dependencies:
+      node-html-parser: 6.1.5
+    dev: true
+
   /markdown-it@13.0.1:
     resolution: {integrity: sha512-lTlxriVoy2criHP0JKRhO2VDG9c2ypWCsT237eDiLqi09rmbKoUetyGHq2uOIRoRS//kfoJckS0eUzzkDR+k2Q==}
     hasBin: true
@@ -1263,6 +1294,13 @@ packages:
 
   /neo-async@2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
+    dev: true
+
+  /node-html-parser@6.1.5:
+    resolution: {integrity: sha512-fAaM511feX++/Chnhe475a0NHD8M7AxDInsqQpz6x63GRF7xYNdS8Vo5dKsIVPgsOvG7eioRRTZQnWBrhDHBSg==}
+    dependencies:
+      css-select: 5.1.0
+      he: 1.2.0
     dev: true
 
   /normalize-path@3.0.0:
