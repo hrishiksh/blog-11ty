@@ -1,6 +1,6 @@
 ## 🎯 Target
 
-- [ ] added golang blog
+- [x] added golang blog
 - [ ] Faveicon
 - [ ] seo headera
 - [x] robots.txt
