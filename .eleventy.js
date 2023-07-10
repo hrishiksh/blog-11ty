@@ -13,7 +13,6 @@ module.exports = function (eleventyConfig) {
   });
   eleventyConfig.addPassthroughCopy({ "src/style/prism.css": "prism.css" });
   eleventyConfig.addPassthroughCopy({ "src/extra/robots.txt": "robots.txt" });
-  eleventyConfig.addPassthroughCopy("src/functions");
 
   eleventyConfig.addShortcode("dateparse", (dateobject) => {
     let parsedDate = new Date(dateobject).toLocaleDateString("en-us", {
