@@ -65,6 +65,7 @@ Continuing from the previous example, we want to host an API in `https://yourdom
 Inside the `hello.js` file, we will write a simple function that returns a JSON hello world response when invoked.
 
 ```js:hello.js
+
 exports.handler = async function (event, context) {
 	return {
 		statusCode: 200,
@@ -79,6 +80,7 @@ In the above code example, I have exported an `async` function which returns an 
 The event argument in the exported function can provide you with some basic yet useful set of information.
 
 ```json:event body
+
 {
   "path": "Path parameter (original URL encoding)",
   "httpMethod": "Incoming request’s method name",
@@ -100,6 +102,7 @@ npm i -D netlify-cli
 Then add an npm script in the `package.json` file to run the local development server.
 
 ```json:package.json
+
 {
 	"name": "netlify-function-hello",
 	"version": "1.0.0",
@@ -141,6 +144,7 @@ git commit -m"first commit"
 The content inside `.gitignore` file should look like this.
 
 ```gitignore:.gitignore
+
 node_modules
 .netlify
 ```
@@ -164,6 +168,7 @@ The deployed endpoint is too long and boring. But the good news is you can chang
 Inside your `netlify.toml` file, add a redirect block. There you can define redirect from and redirect to parameters for incoming requests.
 
 ```toml:netlify.toml
+
 [[redirects]]
 from = "/api/*"
 to = "/.netlify/functions/:splat"

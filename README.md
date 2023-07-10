@@ -13,6 +13,7 @@
 - [ ] front page
 - [ ] set Theme as per browser preference
 - [ ] bulk redirect to www and pages.dev domain
+- [ ] convert date shortcode to filter
 
 ## Saved ! maybe need in the future
 
