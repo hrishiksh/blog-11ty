@@ -11,6 +11,8 @@
 - [x] Setting up tips section
 - [x] 404 page
 - [ ] front page
+- [ ] set Theme as per browser preference
+- [ ] bulk redirect to www and pages.dev domain
 
 ## Saved ! maybe need in the future
 
