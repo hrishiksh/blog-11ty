@@ -58,7 +58,7 @@ On the other hand, if you are making a serious website, a startup, or a business
 
 ## Download Google fonts locally and add proper prefixes
 
-In this tutorial, we are using [Google webfonts helper tool](https://google-webfonts-helper.herokuapp.com/fonts) to download and configure Google font on our website. Visit the Google webfonts helper tool and search for the fonts you want to include in your website. In this tutorial, I am using Inter font as an example.
+In this tutorial, we are using [Google webfonts helper tool](https://gwfh.mranftl.com/fonts) to download and configure Google font on our website. Visit the Google webfonts helper tool and search for the fonts you want to include in your website. In this tutorial, I am using Inter font as an example.
 
 ![Using Google webfont helper](/inline-images/selfhost-google-font-local-webfont-helper.webp)
 
