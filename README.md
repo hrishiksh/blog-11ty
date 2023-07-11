@@ -7,11 +7,11 @@
 - [x] sitemap
 - [x] RSS feed
 - [ ] responsive design
-- [ ] google site varification tag
+- [x] google site varification tag
 - [x] Setting up tips section
 - [x] 404 page
 - [x] front page
-- [ ] bulk redirect to www and pages.dev domain
+- [x] bulk redirect to www and pages.dev domain
 - [x] convert date shortcode to filter
 - [ ] jsonld
 
