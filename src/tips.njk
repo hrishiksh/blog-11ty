@@ -12,7 +12,7 @@ date: 2023-07-01
                 <a href="{{tip.page.url}}" class="underline">{{tip.data.title}}</a>
              </h2>
             <p class="font-sans text-sm">
-                {% dateparse tip.page.date %}
+                {{tip.page.date|formattedDate}}
             </p>  
         </div>
              

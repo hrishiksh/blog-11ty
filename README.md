@@ -10,10 +10,9 @@
 - [ ] google site varification tag
 - [x] Setting up tips section
 - [x] 404 page
-- [ ] front page
-- [ ] set Theme as per browser preference
+- [x] front page
 - [ ] bulk redirect to www and pages.dev domain
-- [ ] convert date shortcode to filter
+- [x] convert date shortcode to filter
 - [ ] jsonld
 
 ## Saved ! maybe need in the future
