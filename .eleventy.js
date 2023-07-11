@@ -23,10 +23,6 @@ module.exports = function (eleventyConfig) {
     return parsedDate;
   });
 
-  eleventyConfig.addShortcode("analytics", async (url) => {
-    console.log(url);
-  });
-
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(rssPlugin);
   eleventyConfig.setLibrary("md", markdownit().use(anchor).use(codeBlockName));

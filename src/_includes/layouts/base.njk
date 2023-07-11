@@ -2,11 +2,27 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>{{ title }}</title>
+        <meta name="title" content="{{title}}" />
+        <meta name="description" content="{{description}}" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="{{site.url}}{{page.url}}" />
+        <meta property="og:title" content="{{title}}" />
+        <meta property="og:description" content="{{description}}" />
+        <meta property="og:image" content="{{site.url}}{{hero}}" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="{{site.url}}{{page.url}}" />
+        <meta property="twitter:title" content="{{title}}" />
+        <meta property="twitter:description" content="{{description}}" />
+        <meta property="twitter:image" content="{{site.url}}{{hero}}" />
+        <meta name="robots" content="index,follow" />
+        <link rel="canonical" href="{{site.url}}{{page.url}}" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon16.png">
         <link rel="stylesheet" href="/output.css"/>
         <link rel="stylesheet" href="/prism.css">
-        <meta name="generator" content="{{ eleventy.generator }}">
         <script defer>
             if (localStorage.getItem("theme") === null) {
                 document.documentElement.setAttribute("data-theme", "light");

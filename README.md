@@ -1,8 +1,8 @@
 ## 🎯 Target
 
 - [x] added golang blog
-- [ ] Faveicon
-- [ ] seo headera
+- [x] Faveicon
+- [x] seo headera
 - [x] robots.txt
 - [x] sitemap
 - [x] RSS feed
@@ -14,6 +14,7 @@
 - [ ] set Theme as per browser preference
 - [ ] bulk redirect to www and pages.dev domain
 - [ ] convert date shortcode to filter
+- [ ] jsonld
 
 ## Saved ! maybe need in the future
 

@@ -1,14 +1,10 @@
-<script>
+<script defer>
   const url = "{{page.url}}";
-    fetch("{{env.apiUrl}}/update", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ url }),
-    }).then((res) => {
-      console.log(res);
-    });
+  fetch("{{env.apiUrl}}/update", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ url }),
+  });
 </script>
-
-{{env.apiUrl}}
