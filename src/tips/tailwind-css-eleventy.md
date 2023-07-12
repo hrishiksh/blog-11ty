@@ -3,7 +3,7 @@ title: Use TailwindCSS with Eleventy Static Site Generator
 description: A guide to using Tailwindcss and Eleventy with auto reloading feature. You will also learn to add DaisyUI in conjunction with TailwindCSS.
 date: 2023-07-11
 related:
-  - generate-image-from-html-satori
+  - table-of-content-eleventy
   - fetch-google-fonts-api
   - convert-svg-png-browser
 ---
