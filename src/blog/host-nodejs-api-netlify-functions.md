@@ -125,6 +125,7 @@ You can customize the Netlify function directory and port using a `netlify.toml`
 If you want to change your functions directory from `netlify/` to `netlify-functions/` and change the port from `9999` to `5000`, then the `netlify.toml` file should look like this.
 
 ```toml:netlify.toml
+
 [dev]
 functions = "netlify-functions"
 functionsPort = 5000
