@@ -6,13 +6,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+        sans: ['"Work Sans"', ...defaultTheme.fontFamily.sans],
         mono: ['"Fira Code"', ...defaultTheme.fontFamily.mono],
+        display: ["Caprasimo"],
       },
     },
   },
-  daisyui: {
-    themes: ["light", "dracula"],
-  },
-  plugins: [require("@tailwindcss/typography"), require("daisyui")],
+  plugins: [require("@tailwindcss/typography")],
 };
