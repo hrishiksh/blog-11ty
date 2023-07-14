@@ -65,8 +65,32 @@
   top: 0;
   left: 0;
   padding: 0.3rem 1rem;
-  color: hsl(var(--nc));
+  color: white;
   background: transparent;
   font-family: "Fira Code";
-  border-bottom: solid 2px hsl(var(--a));
+  border-bottom: solid 2px goldenrod;
+}
+
+p a {
+  display: inline-flex;
+  align-items: center;
+}
+
+a[href*="youtube.com"]::before {
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
+  content: "\f167";
+  font-style: normal;
+  text-rendering: auto;
+  padding: 0px 2px;
+}
+
+a[href*="github.com"]::before {
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
+  content: "\f09b";
+  font-style: normal;
+  text-rendering: auto;
+  padding: 0px 2px;
+  text-decoration: none;
 }

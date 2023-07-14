@@ -6,7 +6,7 @@
 - [x] robots.txt
 - [x] sitemap
 - [x] RSS feed
-- [ ] responsive design
+- [x] responsive design
 - [x] google site varification tag
 - [x] Setting up tips section
 - [x] 404 page
@@ -14,6 +14,8 @@
 - [x] bulk redirect to www and pages.dev domain
 - [x] convert date shortcode to filter
 - [ ] jsonld
+- [ ] dark mode
+- [ ] chnage prose-code bg
 
 ## Saved ! maybe need in the future
 
