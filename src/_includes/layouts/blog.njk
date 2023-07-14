@@ -1,13 +1,15 @@
 ---
 layout: "layouts/base.njk"
 ---
-<div class="flex">
-    <article class="prose prose-slate prose-lg font-sans prose-h1:text-4xl my-10 prose-code:font-mono prose-pre:w-[95vw] sm:prose-pre:w-auto">
-        <h1>
-            {{title}}
-        </h1>
-        <p>{{date|formattedDate}}</p>
-        <img src="{{hero}}" alt="{{title}}">
+<hgroup class="pt-4 sm:pt-10">
+    <p class="font-semibold text-base sm:text-lg text-center py-4 text-gray-500">Published on {{date|formattedDate}}</p>
+    <h1 class="font-display text-3xl sm:text-6xl text-center">
+        {{title}}
+    </h1>
+</hgroup>
+<img src="{{hero}}" alt="{{title}}" class="w-full py-8 sm:py-20 rounded">
+
+    <article class="prose prose-slate font-sans sm:prose-lg prose-code:font-mono prose-pre:max-w-full sm:mx-auto">
         {{content | safe}}
 
         <section>
@@ -21,11 +23,11 @@ layout: "layouts/base.njk"
             </ul>
         </section>
     </article>
-    <aside class="prose prose-slate sm:prose-lg hidden sm:block h-auto mt-48">
+    {# <aside class="prose prose-slate hidden sm:block prose-h3:mt-0">
         <div class="sticky top-20 prose-li:list-none">
+            <h3 class="pl-8">Table of content</h3>
             {{content | toc | safe}}
         </div>   
-    </aside>
+    </aside> #}
 
-</div>
 

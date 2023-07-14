@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Work Sans"', ...defaultTheme.fontFamily.sans],
+        sans: ["Archivo", ...defaultTheme.fontFamily.sans],
         mono: ['"Fira Code"', ...defaultTheme.fontFamily.mono],
         display: ["Caprasimo"],
       },

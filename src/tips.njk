@@ -5,16 +5,16 @@ description: Daily web dev tips. Keep updated with the latest development in tec
 date: 2023-07-01
 ---
 
-<section class="flex flex-col gap-10 my-20">
+<ul class="flex flex-col gap-10 my-20">
     {% for tip in collections.tips | reverse %}
-        <div class="flex items-baseline gap-4">
+        <li class="flex items-baseline gap-4">
             <h2 class="font-sans font-normal text-lg">
                 <a href="{{tip.page.url}}" class="underline">{{tip.data.title}}</a>
              </h2>
-            <p class="font-sans text-sm">
+            <p class="font-sans text-sm hidden sm:inline-flex">
                 {{tip.page.date|formattedDate}}
             </p>  
-        </div>
+        </li>
              
     {% endfor %}
-</section>
+</ul>

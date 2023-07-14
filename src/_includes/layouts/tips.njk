@@ -1,30 +1,25 @@
 ---
 layout: "layouts/base.njk"
 ---
-<div class="flex ">
-    <article class="prose prose-slate sm:prose-p:text-lg font-sans prose-h1:font-display my-10 prose-code:font-mono prose-pre:w-[95vw] sm:prose-pre:w-auto prose-pre:bg-slate-950">
-        <h1>
-            {{title}}
-        </h1>
-        <p>{{date|formattedDate}}</p>
-        {{content | safe}}
+<hgroup class="py-4 sm:py-10">
+    <p class="font-semibold text-base sm:text-lg text-center py-4 text-gray-500">Published on {{date|formattedDate}}</p>
+    <h1 class="font-display text-3xl sm:text-6xl text-center">
+        {{title}}
+    </h1>
+</hgroup>
+<article class="prose prose-slate font-sans sm:prose-lg prose-code:font-mono prose-pre:max-w-full sm:mx-auto">
+    {{content | safe}}
+    <section>
+        <h3>Additional resources for you</h3>
+        <ul>
+            {% for tip in related %}
+                <li>
+                    <a href="/tips/{{tip | slugify}}">{{tip}}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+</article>
+   
 
-        <section>
-            <h3>Additional resources for you</h3>
-            <ul>
-                {% for tip in related %}
-                    <li>
-                        <a href="/tips/{{tip | slugify}}">{{tip}}</a>
-                    </li>
-                {% endfor %}
-            </ul>
-        </section>
-    </article>
-    <aside class="prose prose-slate sm:prose-lg hidden sm:block h-auto mt-48">
-        <div class="sticky top-20 prose-li:list-none">
-            {{content | toc | safe}}
-        </div>   
-    </aside>
-
-</div>
 
