@@ -7,12 +7,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets/fonts": "fonts" });
   eleventyConfig.addPassthroughCopy({ "src/assets/images": "images" });
   eleventyConfig.addPassthroughCopy({
-    "src/assets/fontawesome": "fontawesome",
-  });
-  eleventyConfig.addPassthroughCopy({
     "src/assets/inline-images": "inline-images",
   });
-  eleventyConfig.addPassthroughCopy({ "src/style/prism.css": "prism.css" });
   eleventyConfig.addPassthroughCopy({ "src/extra/robots.txt": "robots.txt" });
 
   eleventyConfig.addFilter("formattedDate", (dateobject) => {

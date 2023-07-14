@@ -7,35 +7,35 @@
     </div>
     <div>
       <ul
-        class="hidden sm:inline-flex items-center gap-8 font-medium text-gray-600"
+        class="hidden sm:inline-flex sm:items-center gap-8 font-medium text-gray-600"
       >
         <li>
           <a href="/blog">
-            <i class="fa-regular fa-file-lines"></i>
+            <span class="icon-blog"></span>
             <span>Blog</span>
           </a>
         </li>
         <li>
           <a href="/tips">
-            <i class="fa-regular fa-lightbulb"></i>
+            <span class="icon-lightbulb"></span>
             <span> Tips </span>
           </a>
         </li>
         <li>
           <a href="/feed.xml">
-            <i class="fa-solid fa-rss"></i>
+            <span class="icon-rss"></span>
             <span>Feed</span></a
           >
         </li>
         <li>
           <a href="https://twitter.com/hrishikshpathak">
-            <i class="fa-solid fa-hashtag"></i>
+            <span class="icon-hash"></span>
             <span>Twitter</span>
           </a>
         </li>
         <li>
           <a href="mailto:hrishikeshb2pathak@gmail.com">
-            <i class="fa-solid fa-at"></i>
+            <span class="icon-email"></span>
             <span>Email</span>
           </a>
         </li>
@@ -53,31 +53,31 @@
   >
     <li class="py-2 px-6">
       <a href="/blog">
-        <i class="fa-regular fa-file-lines"></i>
+        <span class="icon-blog"></span>
         <span>Blog</span>
       </a>
     </li>
     <li class="py-2 px-6">
       <a href="/tips">
-        <i class="fa-regular fa-lightbulb"></i>
+        <span class="icon-lightbulb"></span>
         <span>Tips</span>
       </a>
     </li>
     <li class="py-2 px-6">
       <a href="/feed.xml">
-        <i class="fa-solid fa-rss"></i>
+        <span class="icon-rss"></span>
         <span>Feed</span>
       </a>
     </li>
     <li class="py-2 px-6">
       <a href="https://twitter.com/hrishikshpathak">
-        <i class="fa-solid fa-hashtag"></i>
+        <span class="icon-hash"></span>
         <span>Twitter</span>
       </a>
     </li>
     <li class="py-2 px-6">
       <a href="mailto:hrishikeshb2pathak@gmail.com">
-        <i class="fa-solid fa-at"></i>
+        <span class="icon-email"></span>
         <span>Drop a mail</span>
       </a>
     </li>
@@ -89,16 +89,16 @@
   const menuButton = document.getElementById("menu-btn");
   const mobileMenu = document.getElementById("mobile-menu");
 
-  menuButton.innerHTML = `<i class="fa-solid fa-bars text-lg"></i>`;
+  menuButton.innerHTML = `<span class="icon-menu"></span>`;
 
   menuButton.addEventListener("click", () => {
     toggleElement.click();
     if (toggleElement.checked) {
       mobileMenu.classList.remove("hidden");
-      menuButton.innerHTML = `<i class="fa-solid fa-xmark text-lg"></i>`;
+      menuButton.innerHTML = `<span class="icon-clear"></span>`;
     } else {
       mobileMenu.classList.add("hidden");
-      menuButton.innerHTML = `<i class="fa-solid fa-bars text-lg"></i>`;
+      menuButton.innerHTML = `<span class="icon-menu"></span>`;
     }
   });
 </script>
